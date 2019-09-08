@@ -1,0 +1,92 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-09-03T17:09:24.040Z",
+        "line": 4,
+        "name": "Post an employee method test",
+        "description": "",
+        "id": "employee-rest-api-request;post-an-employee-method-test",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 5,
+            "name": "Content type and Accept type is Json",
+            "match": {},
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "I post a new Employee with \"random\" id",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 7,
+            "name": "status code is 201",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 8,
+            "name": "Request json should contain Employee info",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 9,
+            "name": "I send a get request with \"random\" id",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 10,
+            "name": "status code is 200",
+            "match": {},
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 11,
+            "name": "employee Json response data should match the posted json data",
+            "match": {},
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ApiPost"
+          }
+        ]
+      }
+    ],
+    "name": "Employee Rest Api request",
+    "description": "",
+    "id": "employee-rest-api-request",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/com/rest/features/post_an_employee.feature",
+    "tags": []
+  }
+]
